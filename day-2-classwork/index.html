@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-2-Classwork</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <style>
+        #root{
+            width: 50%;
+            height: fit-content;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const { createRoot } = ReactDOM;
+
+        const page = (
+            <div>
+                <h1>Learn web development</h1>
+                <p>Welcome to the MDN learning area. This set of articles aims to guide complete beginners to web development with all that they need to start coding websites.</p>
+                <p>The aim of this area of MDN is not to take you from "beginner" to "expert" but to take you from "beginner" to "comfortable" from there, you should be able to start making your way, learning from <a href="#">the rest of MDN</a>, and other intermediate to advanced resources that assume a lot of previous knowledge.</p>
+                <p>if you are a complete beginner, web development can be challenging --- we will hold your hand and provide enough detail for you to feel comfortable and learn the topics properly. You should feel at home whether you area student learning web development (on your own or as part of a class)</p>
+            </div>
+        );
+
+        const root = createRoot(document.getElementById('root'));
+        root.render(page);
+    </script>
+</body>
+</html>
+
+
